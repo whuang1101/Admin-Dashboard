@@ -10,13 +10,7 @@ body, html{
     height: 100%;
     display: grid   ;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
-}
-.options{
-    background-color: rgb(69,144,206);
-    grid-column: 1/2;
-    grid-row: 1/3;
-    width: 100%;
+    grid-template-rows: 1fr 4fr;
 }
 .search{
     grid-column: 2/3;
@@ -29,7 +23,7 @@ body, html{
     grid-row: 2/3;
     background-color: rgb(227,232,239);
     display: grid;
-    grid-template-columns: 2.5 fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     padding:1.5rem;
     gap: 2rem;
     overflow: scroll;
@@ -51,7 +45,7 @@ body, html{
 
 .project-card {
     background-color: white;
-    border-radius: 5%;
+    border-radius: 1rem;
     display: grid;
     grid-template-rows: .1fr 2fr .1fr;
     grid-template-columns: .03fr 1fr ;
@@ -80,6 +74,165 @@ body, html{
     grid-row: 2/3;
 }
 h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 520;
+}
+
+/* Setting up the top left portion of the website*/
+.search {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: .5rem 3rem .5rem 3rem;
+}
+.svg {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.search-first-half {
+    display: grid;
+    grid-template-columns:1.8fr 1fr;
+    column-gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.search-top-left {
+    display: grid;
+    grid-template-columns: .8fr 20fr;
+    column-gap: 1rem;
+}
+.search-bar {
+    background-color: rgb(227, 232, 239);
+    border-radius: 30rem;
+    padding-left: .5rem;
+    outline: none;
+    border: 1px solid white;
+    height: 1.8rem;
+}
+/* Setting up the top right portion of the website*/
+.search-bar:focus{
+    outline: none;
+}
+.search-top-right {
+    display: grid;
+    grid-template-columns: .1fr .1fr 2fr;
+    column-gap: 1.8rem;
+    justify-content: center;
+    align-items: center;
+}
+.search-top-right .profile-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.profile-pic {
+    width:3rem;
+    height: auto;
+    border-radius: 20rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up the bottom left portion of the website*/
+.search-second {
+    display: grid;
+    grid-template-columns:1.8fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.search-bottom-left {
+    display: grid;
+    grid-template-rows:.1fr 1fr;
+    grid-template-columns: .15fr 1fr;
+    row-gap: .5rem;
+}
+.search-bottom-left .profile-pic{
+    width: 4rem;
+    height: auto;
+    border-radius: 20rem;
+    grid-row: 1/3;
+}
+.introduction{
+    font-weight: 500;
+    font-size: 1rem;
+    grid: 2/1/3/2;
+}
+.username {
+    font-size: 1.5rem ;
+    grid: 2/2/3/3;
+    font-weight: 700;
+}
+/* setting up bottom right portion of search */
+.search-bottom-right {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+button {
+    height: 2.5rem;
+    width: 6rem;
+    background-color: rgb(69,144,206);
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5rem;
+}
+button:hover{
+    color: black;
+    background-color: lightblue;
+}
+
+/* Setting up left side of page */
+.options{
+    background-color: rgb(69,144,206);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding:1rem;   
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 6fr;
+    align-items: center;
+    row-gap: 2rem;
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    column-gap: .8rem;
+}
+.dashboard-svg {
+    width: 3rem;
+    height: 3rem;
+    grid-column: 1/2;
+}
+.profile-svg {
+    width: 2rem;
+    height: 2rem;
+}
+.dashboard-text {
+    font-size: 1.7rem;
+    font-weight: 570;
+    grid-column: 2/3;
+    color: white;
+}
+.text-dashboard:hover{
+    color:blue;
+    font-size: 1.8rem;
+}
+.personal-info,.settings {
+    padding-left: .5rem;
+    display:grid;
+    grid-template-columns: 1fr 10fr;
+    column-gap: 1.5rem;
+    align-items: center;
+    row-gap: 1rem;
+}
+.text-dashboard {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 570;
+}
+.personal-info {
+    grid-template-rows: repeat(6,1fr);
+}
+.settings {
+    grid-template-rows: repeat(3,1fr);
 }
